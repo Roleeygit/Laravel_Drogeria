@@ -17,7 +17,7 @@ class CreatePerfumesTable extends Migration
             $table->id();
             $table->string( "name" );
             $table->string( "type" );
-            $table->integer( "price" );
+            $table->string( "price" );
         });
     }
 

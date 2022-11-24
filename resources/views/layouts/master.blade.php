@@ -7,8 +7,10 @@
     <title></title>
 </head>
 <body>
+    {{-- Nem vettünk még ilyet:( 
+        Nem 
+    --}}
     <h1>Ez itt a master tartalom</h1>
-
     @yield( "content" )
 </body>
 </html>

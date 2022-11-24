@@ -1,3 +1,5 @@
+<title>Termékek</title>
+
 @extends( "layouts.master" )
 
 @section( "content" )
@@ -12,22 +14,52 @@
     </ul>
 @endif
 
+@if( session()->has("success") )
+    <h2>{{ session("success") }}</h2>
+@endif
+
 <form action="add-perfume" method="post">
     @csrf
     <p>
         <label for="">Név</label>
-        <input type="text" name="name">
+        <input type="text" name="name" placeholder="name">
     </p>
     <p>
         <label for="">Típus</label>
-        <input type="text" name="type">
+        <input type="text" name="type" placeholder="type">
     </p>
     <p>
         <label for="">Ár</label>
-        <input type="text" name="price">
+        <input type="text" name="price" placeholder="price">
     </p>
     <p>
         <button type="submit">Küldés</button>
+        
     </p>
 </form>
+    <a href="/perfumes"><button>Parfümök</button></a>
+
 @endsection
+
+<style>
+    *
+    {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body 
+    {
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    h2
+    {
+        color: red;
+    }
+    
+</style>
