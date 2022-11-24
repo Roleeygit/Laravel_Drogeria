@@ -50,5 +50,6 @@ class PerfumeController extends Controller
         $perfume->delete();
 
         return redirect( "/perfumes" );
+        
     }
 }
