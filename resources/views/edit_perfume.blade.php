@@ -47,7 +47,7 @@
 
     body 
     {
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.87);
         color: white;
         text-align: center;
     }   
