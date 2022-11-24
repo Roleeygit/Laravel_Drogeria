@@ -4,9 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PerfumeController;
 
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return redirect('/perfumes');
+});
 
 Route::get( "/perfumes", [ PerfumeController::class, "getPerfumes" ]);
 Route::get( "/new-perfume", [ PerfumeController::class, "newPerfume" ]);

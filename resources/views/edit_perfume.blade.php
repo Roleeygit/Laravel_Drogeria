@@ -28,7 +28,34 @@
         <input type="text" name="price" value="{{ $perfume->price }}">
     </p>
     <p>
-        <button type="submit">Küldés</button>
+        <button type="submit">Mentés</button>
+        <a href="/"><button>Mégse</button></a>
+
+
     </p>
 </form>
 @endsection
+
+<style>
+    *
+    {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body 
+    {
+        background-color: black;
+        color: white;
+        text-align: center;
+    }   
+
+    tr
+    {
+        text-align: center;
+    }
+
+    
+</style>

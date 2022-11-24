@@ -1,5 +1,3 @@
-<title>Termékek</title>
-
 @extends( "layouts.master" )
 
 @section( "content" )
@@ -14,9 +12,6 @@
     </ul>
 @endif
 
-@if( session()->has("success") )
-    <h2>{{ session("success") }}</h2>
-@endif
 
 <form action="add-perfume" method="post">
     @csrf
@@ -33,11 +28,11 @@
         <input type="text" name="price" placeholder="price">
     </p>
     <p>
-        <button type="submit">Küldés</button>
+        <button type="submit" class="submit">Küldés</button>
         
     </p>
 </form>
-    <a href="/perfumes"><button>Parfümök</button></a>
+    <a href="/perfumes"><button class="parfumes">Parfümök</button></a>
 
 @endsection
 
@@ -55,11 +50,34 @@
         background-color: black;
         color: white;
         text-align: center;
+    }   
+
+    tr
+    {
+        text-align: center;
     }
 
-    h2
+    .submit
     {
-        color: red;
+
+        margin: 6px; 
     }
+    
+    .submit:hover
+    {
+        background-color: chartreuse;
+    }
+
+    .parfumes
+    {
+
+    }
+
+    .parfumes:hover
+    {
+        background-color: rgb(9, 85, 226);
+        
+    }
+
     
 </style>

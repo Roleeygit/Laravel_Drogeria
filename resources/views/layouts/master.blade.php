@@ -8,9 +8,12 @@
 </head>
 <body>
     {{-- Nem vettünk még ilyet:( 
-        Nem 
+
     --}}
-    <h1>Ez itt a master tartalom</h1>
+    <h1>Termékek</h1>
+    <h1>Új Termékek</h1>
+    <h1>Szerkesztés</h1>
     @yield( "content" )
+    
 </body>
 </html>

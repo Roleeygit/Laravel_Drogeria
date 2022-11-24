@@ -2,9 +2,9 @@
 
 @section( "content" )
 
-<a href="/new-perfume"><button>Új termék</button></a>
+<a href="/new-perfume"><button class="newproduct">Új termék</button></a>
 
-<table>
+<table align="center">
     <thead>
         <tr>
             <td>Id</td>
@@ -23,10 +23,11 @@
                 <td>{{ $perfume->price }}</td>
                 <td>
                     <a href="/edit-perfume/{{ $perfume->id }}">
-                        <button>Módosítás</button>
+                        <button class="edit">Módosítás</button>
                     </a>
+                    <br>
                     <a href="/delete-perfume/{{ $perfume->id }}">
-                        <button>Törlés</button>
+                        <button class="delete">Törlés</button>
                     </a>
                 </td>
             </tr>
@@ -34,3 +35,60 @@
     </tbody>   
 </table>
 @endsection
+
+<style>
+
+<style>
+    *
+    {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body 
+    {
+        background-color: rgba(0, 0, 0, 0.89);
+        color: white;
+        text-align: center;
+    }
+
+    tr
+    {
+        text-align: center;
+    }
+
+    .delete
+    {
+        background-color: white;
+    }
+
+    .delete:hover
+    {
+        font-size: 12px;
+        background-color: rgb(255, 0, 0);
+    }
+
+    .edit
+    {
+        background-color: white;
+    }
+
+    .edit:hover
+    {
+        font-size: 12px;
+        background-color: rgb(229, 255, 0);
+    }
+    .newproduct
+    {
+        margin: 15px
+    }
+
+    .newproduct:hover
+    {
+        background-color: aqua;
+        font-size: 20px;
+    }
+
+</style>
