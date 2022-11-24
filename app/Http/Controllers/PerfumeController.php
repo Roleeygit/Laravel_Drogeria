@@ -29,7 +29,7 @@ class PerfumeController extends Controller
             [   
                 'name'                  => 'required|min:2|max:50',
                 'type'                  => 'required|min:2',
-                'price'                 => 'required|regex:[0-9]',
+                'price'                 => 'required|regex:"^[0-9]"',
                 
             ],
             [   
