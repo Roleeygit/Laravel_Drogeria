@@ -27,7 +27,7 @@ class PerfumeController extends Controller
         $request->validate(
             
             [   
-                'name'                  => 'required|min:2|max:8',
+                'name'                  => 'required|min:2|max:50',
                 'type'                  => 'required|min:2',
                 'price'                 => 'required|regex:[0-9]',
                 
